@@ -1,0 +1,12 @@
+{
+  "entry": "main.js",
+  "name": "LSETests",
+  "type": "lse-quickjs",
+  "author": "LiteLDev",
+  "version": "1.0.0",
+  "dependencies": [
+    {
+      "name": "legacy-script-engine-quickjs"
+    }
+  ]
+}

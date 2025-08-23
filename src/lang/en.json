@@ -1,0 +1,58 @@
+{
+  "Failed to enable: {0}": "Failed to enable: {0}",
+  "Failed to load: {0}": "Failed to load: {0}",
+  "Cannot save default configurations to {0}": "Cannot save default configurations to {0}",
+  "Failed to read BaseLib at {0}": "Failed to read BaseLib at {0}",
+  "Failed to register plugin manager": "Failed to register plugin manager",
+  "Failed to load plugin code": "Failed to load plugin code",
+  "Failed to read plugin entry at {0}": "Failed to read plugin entry at {0}",
+  "Failed to load plugin {0}: {1}\\n{2}": "Failed to load plugin {0}: {1}\\n{2}",
+  "Failed to unload plugin {0}: {1}": "Failed to unload plugin {0}: {1}",
+  "Migrating legacy plugin at {0}": "Migrating legacy plugin at {0}",
+  "Failed to migrate legacy plugin at {0}: {1} already exists": "Failed to migrate legacy plugin at {0}: {1} already exists",
+  "Failed to create directory {0}": "Failed to create directory {0}",
+  "Migrating legacy plugins": {
+    "": {
+      "": {
+        "": "Migrating legacy plugins..."
+      }
+    }
+  },
+  "Legacy plugins have been migrated, please restart the server to load them!": "Legacy plugins have been migrated, please restart the server to load them!",
+  "Overworld": "Overworld",
+  "Nether": "Nether",
+  "End": "End",
+  "Other dimension": "Other dimension",
+  "JSON parse error": "JSON parse error",
+  "Npm finished successfully": {
+    "": "Npm finished successfully."
+  },
+  "Executing \"npm install\" for plugin {name}": {
+    "": {
+      "": {
+        "": "Executing \"npm install\" for plugin {name}..."
+      }
+    }
+  },
+  "Error occurred": {
+    " Exit code: {code}": "Error occurred. Exit code: {code}"
+  },
+  "Executing \"pip install\" for plugin {name}": {
+    "": {
+      "": {
+        "": "Executing \"pip install\" for plugin {name}..."
+      }
+    }
+  },
+  "Pip finished successfully": {
+    "": "Pip finished successfully."
+  },
+  "Runtime command {} already exists, changes will not beapplied except for setOverload!": "Runtime command {} already exists, changes will not beapplied except for setOverload!",
+  "Failed to initialize file mapping": "Failed to initialize file mapping",
+  "Failed to initialize map file": "Failed to initialize map file",
+  "Command {} failed to execute, is the plugin unloaded?": "Command {} failed to execute, is the plugin unloaded?",
+  "Could not find {} in registered commands": {
+    "": "Could not find {} in registered commands."
+  },
+  "Event {} not found!": "Event {} not found!"
+}

@@ -1,0 +1,326 @@
+{
+    legacymoney = {
+        libfiles = [[D:\xmake-global\.xmake\packages\l\legacymoney\0.9.0-rc.1\a15ed7a90ace443a9a0e39957705f0be\lib\LegacyMoney.lib]],
+        version = "0.9.0-rc.1",
+        __requirestr = "legacymoney 0.9.0-rc.1",
+        installdir = [[D:\xmake-global\.xmake\packages\l\legacymoney\0.9.0-rc.1\a15ed7a90ace443a9a0e39957705f0be]],
+        sysincludedirs = [[D:\xmake-global\.xmake\packages\l\legacymoney\0.9.0-rc.1\a15ed7a90ace443a9a0e39957705f0be\include]],
+        linkdirs = [[D:\xmake-global\.xmake\packages\l\legacymoney\0.9.0-rc.1\a15ed7a90ace443a9a0e39957705f0be\lib]],
+        __enabled = true,
+        static = true,
+        links = "LegacyMoney"
+    },
+    scriptx = {
+        libfiles = {
+            [[D:\xmake-global\.xmake\packages\s\scriptx\main\03853a812f27457e9bf37b4dc1e2ae81\lib\ScriptX.lib]],
+            [[D:\xmake-global\.xmake\packages\l\lua\v5.4.7\1a5ff96f7a834c1baa1ec743738c5e59\lib\lua.lib]]
+        },
+        version = "main",
+        __requirestr = "scriptx main",
+        __requireconfs = {
+            configs = {
+                backend = "Lua"
+            }
+        },
+        sysincludedirs = {
+            [[D:\xmake-global\.xmake\packages\s\scriptx\main\03853a812f27457e9bf37b4dc1e2ae81\include\src\include]],
+            [[D:\xmake-global\.xmake\packages\l\lua\v5.4.7\1a5ff96f7a834c1baa1ec743738c5e59\include\lua]]
+        },
+        links = {
+            "ScriptX",
+            "lua"
+        },
+        installdir = [[D:\xmake-global\.xmake\packages\s\scriptx\main\03853a812f27457e9bf37b4dc1e2ae81]],
+        defines = {
+            "SCRIPTX_BACKEND=Lua",
+            "SCRIPTX_BACKEND_TRAIT_PREFIX=../backend/Lua/trait/Trait"
+        },
+        linkdirs = {
+            [[D:\xmake-global\.xmake\packages\s\scriptx\main\03853a812f27457e9bf37b4dc1e2ae81\lib]],
+            [[D:\xmake-global\.xmake\packages\l\lua\v5.4.7\1a5ff96f7a834c1baa1ec743738c5e59\lib]]
+        },
+        __enabled = true,
+        envs = {
+            PATH = {
+                [[D:\xmake-global\.xmake\packages\l\lua\v5.4.7\1a5ff96f7a834c1baa1ec743738c5e59\bin]]
+            }
+        },
+        static = true
+    },
+    legacyremotecall = {
+        libfiles = [[D:\xmake-global\.xmake\packages\l\legacyremotecall\0.9.0-rc.1\b7cf52ed7d64477dbebe415f057c9fe5\lib\LegacyRemoteCall.lib]],
+        version = "0.9.0-rc.1",
+        __requirestr = "legacyremotecall 0.9.0-rc.1",
+        installdir = [[D:\xmake-global\.xmake\packages\l\legacyremotecall\0.9.0-rc.1\b7cf52ed7d64477dbebe415f057c9fe5]],
+        sysincludedirs = [[D:\xmake-global\.xmake\packages\l\legacyremotecall\0.9.0-rc.1\b7cf52ed7d64477dbebe415f057c9fe5\include]],
+        linkdirs = [[D:\xmake-global\.xmake\packages\l\legacyremotecall\0.9.0-rc.1\b7cf52ed7d64477dbebe415f057c9fe5\lib]],
+        __enabled = true,
+        static = true,
+        links = "LegacyRemoteCall"
+    },
+    ["cpp-httplib"] = {
+        libfiles = {
+            [[D:\xmake-global\.xmake\packages\o\openssl\1.1.1-w\290075b839ee412e80953472c36e007b\lib\libssl.lib]],
+            [[D:\xmake-global\.xmake\packages\o\openssl\1.1.1-w\290075b839ee412e80953472c36e007b\lib\libcrypto.lib]],
+            [[D:\xmake-global\.xmake\packages\z\zlib\v1.3.1\95786712bac941e795afa187a68143a4\lib\zlib.lib]]
+        },
+        version = "v0.14.3",
+        links = {
+            "libssl",
+            "libcrypto",
+            "zlib"
+        },
+        defines = {
+            "CPPHTTPLIB_OPENSSL_SUPPORT",
+            "CPPHTTPLIB_ZLIB_SUPPORT"
+        },
+        __requireconfs = {
+            configs = {
+                ssl = true,
+                zlib = true
+            }
+        },
+        sysincludedirs = {
+            [[D:\xmake-global\.xmake\packages\c\cpp-httplib\v0.14.3\844ca17f67154a229d3f4d9b8c2e16bb\include]],
+            [[D:\xmake-global\.xmake\packages\o\openssl\1.1.1-w\290075b839ee412e80953472c36e007b\include]],
+            [[D:\xmake-global\.xmake\packages\z\zlib\v1.3.1\95786712bac941e795afa187a68143a4\include]]
+        },
+        installdir = [[D:\xmake-global\.xmake\packages\c\cpp-httplib\v0.14.3\844ca17f67154a229d3f4d9b8c2e16bb]],
+        __requirestr = "cpp-httplib 0.14.3",
+        license = "MIT",
+        linkdirs = {
+            [[D:\xmake-global\.xmake\packages\o\openssl\1.1.1-w\290075b839ee412e80953472c36e007b\lib]],
+            [[D:\xmake-global\.xmake\packages\z\zlib\v1.3.1\95786712bac941e795afa187a68143a4\lib]]
+        },
+        __enabled = true,
+        envs = {
+            PATH = {
+                [[D:\xmake-global\.xmake\packages\c\cmake\4.0.3\5249d11949644178abe2f58a6ffb0624\bin]],
+                [[D:\xmake-global\.xmake\packages\o\openssl\1.1.1-w\290075b839ee412e80953472c36e007b\bin]],
+                [[D:\xmake-global\.xmake\packages\z\zlib\v1.3.1\95786712bac941e795afa187a68143a4\bin]]
+            }
+        },
+        syslinks = {
+            "ws2_32",
+            "user32",
+            "crypt32",
+            "advapi32"
+        }
+    },
+    levilamina = {
+        envs = {
+            PATH = {
+                [[D:\xmake-global\.xmake\packages\c\cmake\4.0.3\5249d11949644178abe2f58a6ffb0624\bin]],
+                [[D:\xmake-global\.xmake\packages\g\glm\1.0.1\18615f0387cd4e2ab2e9ea9965afc784\bin]],
+                [[D:\xmake-global\.xmake\packages\l\leveldb\1.23\2532d000dc9d47cbb618c80ba0e6d806\bin]],
+                [[D:\xmake-global\.xmake\packages\p\prelink\v0.3.0\44fe33c6e7d440f8a8f4d2549940d247\bin]],
+                [[D:\xmake-global\.xmake\packages\b\bedrockdata\1.21.50.10-server\444ebf097e7f4e9f88dc065142f87458\bin]]
+            }
+        },
+        version = "1.0.1",
+        __requirestr = "levilamina 1.0.1",
+        links = {
+            "LeviLamina",
+            "fmt",
+            "leveldb",
+            "snappy",
+            "SymbolProvider"
+        },
+        installdir = [[D:\xmake-global\.xmake\packages\l\levilamina\1.0.1\8a2ce0d166104d6c8b7c173c9537d51c]],
+        __requireconfs = {
+            configs = {
+                target_type = "server"
+            }
+        },
+        shared = true,
+        cxxflags = "/utf-8",
+        static = true,
+        sysincludedirs = {
+            [[D:\xmake-global\.xmake\packages\l\levilamina\1.0.1\8a2ce0d166104d6c8b7c173c9537d51c\include]],
+            [[D:\xmake-global\.xmake\packages\e\entt\v3.14.0\3822e64c6ba14bb99ba35d14302954bf\include]],
+            [[D:\xmake-global\.xmake\packages\e\expected-lite\v0.8.0\36ca3aab48a04473a0b2d34e01875b34\include]],
+            [[D:\xmake-global\.xmake\packages\f\fmt\10.2.1\2eeacf73125546e1ae5a2a161567d6e6\include]],
+            [[D:\xmake-global\.xmake\packages\g\gsl\v4.0.0\cc4533ab1d88423b98d8fbee7dce0557\include]],
+            [[D:\xmake-global\.xmake\packages\g\glm\1.0.1\18615f0387cd4e2ab2e9ea9965afc784\include]],
+            [[D:\xmake-global\.xmake\packages\l\leveldb\1.23\2532d000dc9d47cbb618c80ba0e6d806\include]],
+            [[D:\xmake-global\.xmake\packages\s\snappy\1.2.2\b3244272357b4994abb43dc0aa939d28\include]],
+            [[D:\xmake-global\.xmake\packages\m\magic_enum\v0.9.7\03e2990032db4ea08102d17ff8a57da7\include]],
+            [[D:\xmake-global\.xmake\packages\m\magic_enum\v0.9.7\03e2990032db4ea08102d17ff8a57da7\include\magic_enum]],
+            [[D:\xmake-global\.xmake\packages\n\nlohmann_json\v3.11.3\826582eb66794908a16a49dbdd33bec4\include]],
+            [[D:\xmake-global\.xmake\packages\r\rapidjson\v1.1.0\541d06a92bbb4f8fac523353c2426c15\include]],
+            [[D:\xmake-global\.xmake\packages\t\type_safe\v0.2.4\4b33a9a5c8154bd58b7d4007150f50b7\include]],
+            [[D:\xmake-global\.xmake\packages\d\debug_assert\v1.3.4\e3515434506a445792c1c83600bcf899\include]],
+            [[D:\xmake-global\.xmake\packages\p\pcg_cpp\v1.0.0\6c550fbfc1bb49fbbed872829f6090b0\include]],
+            [[D:\xmake-global\.xmake\packages\p\pfr\2.1.1\45e5102591a649fda279e67eaf92482a\include]],
+            [[D:\xmake-global\.xmake\packages\p\parallel-hashmap\v1.3.12\47b4dd3f84f34e9d98b4cde1eedee54d\include]],
+            [[D:\xmake-global\.xmake\packages\c\concurrentqueue\v1.0.4\0cd923cdfb6a4256954a994422b17de9\include]],
+            [[D:\xmake-global\.xmake\packages\c\concurrentqueue\v1.0.4\0cd923cdfb6a4256954a994422b17de9\include\concurrentqueue\moodycamel]]
+        },
+        linkdirs = {
+            [[D:\xmake-global\.xmake\packages\l\levilamina\1.0.1\8a2ce0d166104d6c8b7c173c9537d51c\lib]],
+            [[D:\xmake-global\.xmake\packages\f\fmt\10.2.1\2eeacf73125546e1ae5a2a161567d6e6\lib]],
+            [[D:\xmake-global\.xmake\packages\l\leveldb\1.23\2532d000dc9d47cbb618c80ba0e6d806\lib]],
+            [[D:\xmake-global\.xmake\packages\s\snappy\1.2.2\b3244272357b4994abb43dc0aa939d28\lib]],
+            [[D:\xmake-global\.xmake\packages\s\symbolprovider\v1.2.0\716edebcb0f14dbbbc97a0d6aa352593\lib]]
+        },
+        __enabled = true,
+        libfiles = {
+            [[D:\xmake-global\.xmake\packages\l\levilamina\1.0.1\8a2ce0d166104d6c8b7c173c9537d51c\lib\LeviLamina.lib]],
+            [[D:\xmake-global\.xmake\packages\l\levilamina\1.0.1\8a2ce0d166104d6c8b7c173c9537d51c\bin\LeviLamina.dll]],
+            [[D:\xmake-global\.xmake\packages\f\fmt\10.2.1\2eeacf73125546e1ae5a2a161567d6e6\lib\fmt.lib]],
+            [[D:\xmake-global\.xmake\packages\l\leveldb\1.23\2532d000dc9d47cbb618c80ba0e6d806\lib\leveldb.lib]],
+            [[D:\xmake-global\.xmake\packages\s\snappy\1.2.2\b3244272357b4994abb43dc0aa939d28\lib\snappy.lib]],
+            [[D:\xmake-global\.xmake\packages\s\symbolprovider\v1.2.0\716edebcb0f14dbbbc97a0d6aa352593\lib\SymbolProvider.lib]]
+        },
+        defines = {
+            "ENTT_PACKED_PAGE=128",
+            "ENTT_SPARSE_PAGE=2048",
+            "ENTT_NO_MIXIN"
+        }
+    },
+    ["toml++"] = {
+        sysincludedirs = [[D:\xmake-global\.xmake\packages\t\toml++\v3.4.0\ebf92e91826542d2870a252ce5988599\include]],
+        envs = {
+            PATH = {
+                [[D:\xmake-global\.xmake\packages\t\toml++\v3.4.0\ebf92e91826542d2870a252ce5988599\bin]],
+                [[D:\xmake-global\.xmake\packages\c\cmake\4.0.3\5249d11949644178abe2f58a6ffb0624\bin]]
+            }
+        },
+        version = "v3.4.0",
+        __requirestr = "toml++ v3.4.0",
+        __enabled = true,
+        license = "MIT",
+        installdir = [[D:\xmake-global\.xmake\packages\t\toml++\v3.4.0\ebf92e91826542d2870a252ce5988599]]
+    },
+    ["mariadb-connector-c"] = {
+        libfiles = {
+            [[D:\xmake-global\.xmake\packages\m\mariadb-connector-c\3.3.9\0fd14f15e6034771b621e24aeeb551f4\lib\mariadb\mariadbclient.lib]],
+            [[D:\xmake-global\.xmake\packages\m\mariadb-connector-c\3.3.9\0fd14f15e6034771b621e24aeeb551f4\lib\mariadb\libmariadb.lib]],
+            [[D:\xmake-global\.xmake\packages\m\mariadb-connector-c\3.3.9\0fd14f15e6034771b621e24aeeb551f4\lib\mariadb\libmariadb.dll]],
+            [[D:\xmake-global\.xmake\packages\m\mariadb-connector-c\3.3.9\0fd14f15e6034771b621e24aeeb551f4\lib\mariadb\plugin\caching_sha2_password.dll]],
+            [[D:\xmake-global\.xmake\packages\m\mariadb-connector-c\3.3.9\0fd14f15e6034771b621e24aeeb551f4\lib\mariadb\plugin\client_ed25519.dll]],
+            [[D:\xmake-global\.xmake\packages\m\mariadb-connector-c\3.3.9\0fd14f15e6034771b621e24aeeb551f4\lib\mariadb\plugin\dialog.dll]],
+            [[D:\xmake-global\.xmake\packages\m\mariadb-connector-c\3.3.9\0fd14f15e6034771b621e24aeeb551f4\lib\mariadb\plugin\mysql_clear_password.dll]],
+            [[D:\xmake-global\.xmake\packages\m\mariadb-connector-c\3.3.9\0fd14f15e6034771b621e24aeeb551f4\lib\mariadb\plugin\pvio_shmem.dll]],
+            [[D:\xmake-global\.xmake\packages\m\mariadb-connector-c\3.3.9\0fd14f15e6034771b621e24aeeb551f4\lib\mariadb\plugin\sha256_password.dll]],
+            [[D:\xmake-global\.xmake\packages\o\openssl\1.1.1-w\290075b839ee412e80953472c36e007b\lib\libssl.lib]],
+            [[D:\xmake-global\.xmake\packages\o\openssl\1.1.1-w\290075b839ee412e80953472c36e007b\lib\libcrypto.lib]]
+        },
+        version = "3.3.9",
+        __requirestr = "mariadb-connector-c 3.3.9",
+        links = {
+            "mariadbclient",
+            "libssl",
+            "libcrypto"
+        },
+        installdir = [[D:\xmake-global\.xmake\packages\m\mariadb-connector-c\3.3.9\0fd14f15e6034771b621e24aeeb551f4]],
+        shared = true,
+        sysincludedirs = {
+            [[D:\xmake-global\.xmake\packages\m\mariadb-connector-c\3.3.9\0fd14f15e6034771b621e24aeeb551f4\include]],
+            [[D:\xmake-global\.xmake\packages\o\openssl\1.1.1-w\290075b839ee412e80953472c36e007b\include]]
+        },
+        static = true,
+        license = "LGPL-2.1",
+        linkdirs = {
+            [[D:\xmake-global\.xmake\packages\m\mariadb-connector-c\3.3.9\0fd14f15e6034771b621e24aeeb551f4\lib\mariadb]],
+            [[D:\xmake-global\.xmake\packages\o\openssl\1.1.1-w\290075b839ee412e80953472c36e007b\lib]]
+        },
+        __enabled = true,
+        envs = {
+            PATH = {
+                [[D:\xmake-global\.xmake\packages\c\cmake\4.0.3\5249d11949644178abe2f58a6ffb0624\bin]],
+                [[D:\xmake-global\.xmake\packages\o\openssl\1.1.1-w\290075b839ee412e80953472c36e007b\bin]]
+            }
+        },
+        syslinks = {
+            "secur32",
+            "shlwapi",
+            "ws2_32",
+            "user32",
+            "crypt32",
+            "advapi32"
+        }
+    },
+    legacyparticleapi = {
+        libfiles = [[D:\xmake-global\.xmake\packages\l\legacyparticleapi\0.9.0-rc.1\7f4d38dba2f945c493fd248065a696c7\lib\LegacyParticleAPI.lib]],
+        version = "0.9.0-rc.1",
+        __requirestr = "legacyparticleapi 0.9.0-rc.1",
+        installdir = [[D:\xmake-global\.xmake\packages\l\legacyparticleapi\0.9.0-rc.1\7f4d38dba2f945c493fd248065a696c7]],
+        sysincludedirs = [[D:\xmake-global\.xmake\packages\l\legacyparticleapi\0.9.0-rc.1\7f4d38dba2f945c493fd248065a696c7\include]],
+        linkdirs = [[D:\xmake-global\.xmake\packages\l\legacyparticleapi\0.9.0-rc.1\7f4d38dba2f945c493fd248065a696c7\lib]],
+        __enabled = true,
+        static = true,
+        links = "LegacyParticleAPI"
+    },
+    nlohmann_json = {
+        sysincludedirs = [[D:\xmake-global\.xmake\packages\n\nlohmann_json\v3.11.3\826582eb66794908a16a49dbdd33bec4\include]],
+        version = "v3.11.3",
+        __requirestr = "nlohmann_json v3.11.3",
+        __enabled = true,
+        license = "MIT",
+        installdir = [[D:\xmake-global\.xmake\packages\n\nlohmann_json\v3.11.3\826582eb66794908a16a49dbdd33bec4]]
+    },
+    magic_enum = {
+        sysincludedirs = {
+            [[D:\xmake-global\.xmake\packages\m\magic_enum\v0.9.7\03e2990032db4ea08102d17ff8a57da7\include]],
+            [[D:\xmake-global\.xmake\packages\m\magic_enum\v0.9.7\03e2990032db4ea08102d17ff8a57da7\include\magic_enum]]
+        },
+        envs = {
+            PATH = {
+                [[D:\xmake-global\.xmake\packages\c\cmake\4.0.3\5249d11949644178abe2f58a6ffb0624\bin]]
+            }
+        },
+        version = "v0.9.7",
+        __requirestr = "magic_enum v0.9.7",
+        __enabled = true,
+        license = "MIT",
+        installdir = [[D:\xmake-global\.xmake\packages\m\magic_enum\v0.9.7\03e2990032db4ea08102d17ff8a57da7]]
+    },
+    simpleini = {
+        sysincludedirs = [[D:\xmake-global\.xmake\packages\s\simpleini\v4.22\1dedfb1b450946098d3856babab16426\include]],
+        version = "v4.22",
+        defines = "SI_CONVERT_WIN32",
+        license = "MIT",
+        __enabled = true,
+        __requirestr = "simpleini v4.22",
+        installdir = [[D:\xmake-global\.xmake\packages\s\simpleini\v4.22\1dedfb1b450946098d3856babab16426]]
+    },
+    levibuildscript = {
+        installdir = [[D:\xmake-global\.xmake\packages\l\levibuildscript\0.4.0\d842a448d12b4a28b77a04065e409b4c]],
+        envs = {
+            PATH = {
+                [[D:\xmake-global\.xmake\packages\l\levibuildscript\0.4.0\d842a448d12b4a28b77a04065e409b4c\bin]]
+            }
+        },
+        __enabled = true,
+        __requirestr = "levibuildscript 0.4.0"
+    },
+    lightwebsocketclient = {
+        libfiles = [[D:\xmake-global\.xmake\packages\l\lightwebsocketclient\v1.0.1\5c2f35b7774c4c35a5d21e40fe028ace\lib\lightwebsocketclient.lib]],
+        version = "v1.0.1",
+        __requirestr = "lightwebsocketclient 1.0.1",
+        installdir = [[D:\xmake-global\.xmake\packages\l\lightwebsocketclient\v1.0.1\5c2f35b7774c4c35a5d21e40fe028ace]],
+        sysincludedirs = [[D:\xmake-global\.xmake\packages\l\lightwebsocketclient\v1.0.1\5c2f35b7774c4c35a5d21e40fe028ace\include]],
+        linkdirs = [[D:\xmake-global\.xmake\packages\l\lightwebsocketclient\v1.0.1\5c2f35b7774c4c35a5d21e40fe028ace\lib]],
+        __enabled = true,
+        static = true,
+        links = "lightwebsocketclient"
+    },
+    sqlite3 = {
+        libfiles = [[D:\xmake-global\.xmake\packages\s\sqlite3\3.43.0+200\3cd8e12478794a2ea0212dcfab9daf02\lib\sqlite3.lib]],
+        version = "3.43.0+200",
+        __requirestr = "sqlite3 3.43.0+200",
+        installdir = [[D:\xmake-global\.xmake\packages\s\sqlite3\3.43.0+200\3cd8e12478794a2ea0212dcfab9daf02]],
+        sysincludedirs = [[D:\xmake-global\.xmake\packages\s\sqlite3\3.43.0+200\3cd8e12478794a2ea0212dcfab9daf02\include]],
+        links = "sqlite3",
+        license = "Public Domain",
+        linkdirs = [[D:\xmake-global\.xmake\packages\s\sqlite3\3.43.0+200\3cd8e12478794a2ea0212dcfab9daf02\lib]],
+        __enabled = true,
+        static = true,
+        envs = {
+            PATH = {
+                [[D:\xmake-global\.xmake\packages\s\sqlite3\3.43.0+200\3cd8e12478794a2ea0212dcfab9daf02\bin]]
+            }
+        }
+    }
+}

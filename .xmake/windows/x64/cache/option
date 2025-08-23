@@ -1,0 +1,62 @@
+{
+    target_type = {
+        default = "server",
+        __sourceinfo_values = {
+            server = {
+                line = 56,
+                file = [[.\xmake.lua]]
+            },
+            client = {
+                line = 56,
+                file = [[.\xmake.lua]]
+            }
+        },
+        values = {
+            "server",
+            "client"
+        },
+        __scriptdir = [[C:\levilamina\LegacyScriptEngine-0.9.7]],
+        __sourceinfo_showmenu = { },
+        __sourceinfo_default = {
+            server = {
+                line = 54,
+                file = [[.\xmake.lua]]
+            }
+        },
+        showmenu = true
+    },
+    backend = {
+        default = "lua",
+        __sourceinfo_values = {
+            python = {
+                line = 61,
+                file = [[.\xmake.lua]]
+            },
+            quickjs = {
+                line = 61,
+                file = [[.\xmake.lua]]
+            },
+            nodejs = {
+                line = 61,
+                file = [[.\xmake.lua]]
+            },
+            lua = {
+                line = 61,
+                file = [[.\xmake.lua]]
+            }
+        },
+        values = {
+            "lua",
+            "quickjs",
+            "python",
+            "nodejs"
+        },
+        __sourceinfo_default = {
+            lua = {
+                line = 60,
+                file = [[.\xmake.lua]]
+            }
+        },
+        __scriptdir = [[C:\levilamina\LegacyScriptEngine-0.9.7]]
+    }
+}

@@ -1,0 +1,437 @@
+{
+    find_program_msvc_arch_x64_plat_windows_checktoolcxx = {
+        ["cl.exe"] = [[C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\bin\HostX64\x64\cl.exe]]
+    },
+    find_program_msvc_arch_x64_plat_windows_checktoolcc = {
+        ["cl.exe"] = [[C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\bin\HostX64\x64\cl.exe]]
+    },
+    find_programver_fetch_package_system = {
+        ["C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake"] = "3.29.5-msvc4"
+    },
+    find_program_fetch_package_xmake = {
+        cmake = false,
+        levibuildscript = false
+    },
+    find_package_windows_x64_fetch_package_system = {
+        ["levilamina_8a2ce0d166104d6c8b7c173c9537d51c_release_1.0.1_external"] = false
+    },
+    find_programver = {
+        ["C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\cl.exe"] = "19.41.34123"
+    },
+    ["detect.sdks.find_vcpkgdir"] = false,
+    find_program_fetch_package_system = {
+        cmake = [[C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake]]
+    },
+    find_program = {
+        git = [[C:\Program Files\Git\cmd\git.exe]],
+        gzip = false,
+        ping = "ping",
+        nim = false,
+        ["cl.exe"] = [[C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\bin\HostX64\x64\cl.exe]],
+        ["7z"] = [[C:\Program Files\xmake\winenv\bin\7z]]
+    },
+    find_program_msvc_arch_x64_plat_windows_checktoolld = {
+        ["link.exe"] = [[C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\bin\HostX64\x64\link.exe]]
+    },
+    find_package_windows_x64_fetch_package_xmake = {
+        ["xmake::magic_enum_03e2990032db4ea08102d17ff8a57da7_release_v0.9.7_external"] = {
+            sysincludedirs = {
+                [[D:\xmake-global\.xmake\packages\m\magic_enum\v0.9.7\03e2990032db4ea08102d17ff8a57da7\include]],
+                [[D:\xmake-global\.xmake\packages\m\magic_enum\v0.9.7\03e2990032db4ea08102d17ff8a57da7\include\magic_enum]]
+            },
+            version = "v0.9.7",
+            license = "MIT"
+        },
+        ["xmake::snappy_b3244272357b4994abb43dc0aa939d28_release_1.2.2_external"] = {
+            sysincludedirs = {
+                [[D:\xmake-global\.xmake\packages\s\snappy\1.2.2\b3244272357b4994abb43dc0aa939d28\include]]
+            },
+            libfiles = {
+                [[D:\xmake-global\.xmake\packages\s\snappy\1.2.2\b3244272357b4994abb43dc0aa939d28\lib\snappy.lib]]
+            },
+            version = "1.2.2",
+            links = {
+                "snappy"
+            },
+            linkdirs = {
+                [[D:\xmake-global\.xmake\packages\s\snappy\1.2.2\b3244272357b4994abb43dc0aa939d28\lib]]
+            },
+            static = true
+        },
+        ["xmake::toml++_ebf92e91826542d2870a252ce5988599_release_v3.4.0_external"] = {
+            sysincludedirs = {
+                [[D:\xmake-global\.xmake\packages\t\toml++\v3.4.0\ebf92e91826542d2870a252ce5988599\include]]
+            },
+            version = "v3.4.0",
+            license = "MIT"
+        },
+        ["xmake::prelink_44fe33c6e7d440f8a8f4d2549940d247_release_v0.3.0_external"] = {
+            version = "v0.3.0"
+        },
+        ["xmake::legacyremotecall_b7cf52ed7d64477dbebe415f057c9fe5_release_0.9.0-rc.1_external"] = {
+            sysincludedirs = {
+                [[D:\xmake-global\.xmake\packages\l\legacyremotecall\0.9.0-rc.1\b7cf52ed7d64477dbebe415f057c9fe5\include]]
+            },
+            libfiles = {
+                [[D:\xmake-global\.xmake\packages\l\legacyremotecall\0.9.0-rc.1\b7cf52ed7d64477dbebe415f057c9fe5\lib\LegacyRemoteCall.lib]]
+            },
+            version = "0.9.0-rc.1",
+            links = {
+                "LegacyRemoteCall"
+            },
+            linkdirs = {
+                [[D:\xmake-global\.xmake\packages\l\legacyremotecall\0.9.0-rc.1\b7cf52ed7d64477dbebe415f057c9fe5\lib]]
+            },
+            static = true
+        },
+        ["xmake::cpp-httplib_844ca17f67154a229d3f4d9b8c2e16bb_release_v0.14.3_external"] = {
+            sysincludedirs = {
+                [[D:\xmake-global\.xmake\packages\c\cpp-httplib\v0.14.3\844ca17f67154a229d3f4d9b8c2e16bb\include]]
+            },
+            defines = {
+                "CPPHTTPLIB_OPENSSL_SUPPORT",
+                "CPPHTTPLIB_ZLIB_SUPPORT"
+            },
+            version = "v0.14.3",
+            license = "MIT"
+        },
+        ["xmake::concurrentqueue_0cd923cdfb6a4256954a994422b17de9_release_v1.0.4_external"] = {
+            sysincludedirs = {
+                [[D:\xmake-global\.xmake\packages\c\concurrentqueue\v1.0.4\0cd923cdfb6a4256954a994422b17de9\include]],
+                [[D:\xmake-global\.xmake\packages\c\concurrentqueue\v1.0.4\0cd923cdfb6a4256954a994422b17de9\include\concurrentqueue\moodycamel]]
+            },
+            version = "v1.0.4",
+            license = "BSD"
+        },
+        ["xmake::pfr_45e5102591a649fda279e67eaf92482a_release_2.1.1_external"] = {
+            version = "2.1.1",
+            sysincludedirs = {
+                [[D:\xmake-global\.xmake\packages\p\pfr\2.1.1\45e5102591a649fda279e67eaf92482a\include]]
+            }
+        },
+        ["xmake::nlohmann_json_826582eb66794908a16a49dbdd33bec4_release_v3.11.3_external"] = {
+            sysincludedirs = {
+                [[D:\xmake-global\.xmake\packages\n\nlohmann_json\v3.11.3\826582eb66794908a16a49dbdd33bec4\include]]
+            },
+            version = "v3.11.3",
+            license = "MIT"
+        },
+        ["xmake::leveldb_2532d000dc9d47cbb618c80ba0e6d806_release_1.23_external"] = {
+            sysincludedirs = {
+                [[D:\xmake-global\.xmake\packages\l\leveldb\1.23\2532d000dc9d47cbb618c80ba0e6d806\include]]
+            },
+            libfiles = {
+                [[D:\xmake-global\.xmake\packages\l\leveldb\1.23\2532d000dc9d47cbb618c80ba0e6d806\lib\leveldb.lib]]
+            },
+            version = "1.23",
+            links = {
+                "leveldb"
+            },
+            linkdirs = {
+                [[D:\xmake-global\.xmake\packages\l\leveldb\1.23\2532d000dc9d47cbb618c80ba0e6d806\lib]]
+            },
+            static = true,
+            license = "BSD-3-Clause"
+        },
+        ["xmake::bedrockdata_444ebf097e7f4e9f88dc065142f87458_release_1.21.50.10-server_external"] = {
+            version = "1.21.50.10-server"
+        },
+        ["xmake::zlib_95786712bac941e795afa187a68143a4_release_v1.3.1_external"] = {
+            sysincludedirs = {
+                [[D:\xmake-global\.xmake\packages\z\zlib\v1.3.1\95786712bac941e795afa187a68143a4\include]]
+            },
+            libfiles = {
+                [[D:\xmake-global\.xmake\packages\z\zlib\v1.3.1\95786712bac941e795afa187a68143a4\lib\zlib.lib]]
+            },
+            version = "v1.3.1",
+            links = {
+                "zlib"
+            },
+            linkdirs = {
+                [[D:\xmake-global\.xmake\packages\z\zlib\v1.3.1\95786712bac941e795afa187a68143a4\lib]]
+            },
+            static = true,
+            license = "zlib"
+        },
+        ["xmake::gsl_cc4533ab1d88423b98d8fbee7dce0557_release_v4.0.0_external"] = {
+            sysincludedirs = {
+                [[D:\xmake-global\.xmake\packages\g\gsl\v4.0.0\cc4533ab1d88423b98d8fbee7dce0557\include]]
+            },
+            version = "v4.0.0",
+            license = "MIT"
+        },
+        ["xmake::fmt_2eeacf73125546e1ae5a2a161567d6e6_release_10.2.1_external"] = {
+            static = true,
+            libfiles = {
+                [[D:\xmake-global\.xmake\packages\f\fmt\10.2.1\2eeacf73125546e1ae5a2a161567d6e6\lib\fmt.lib]]
+            },
+            version = "10.2.1",
+            links = {
+                "fmt"
+            },
+            linkdirs = {
+                [[D:\xmake-global\.xmake\packages\f\fmt\10.2.1\2eeacf73125546e1ae5a2a161567d6e6\lib]]
+            },
+            sysincludedirs = {
+                [[D:\xmake-global\.xmake\packages\f\fmt\10.2.1\2eeacf73125546e1ae5a2a161567d6e6\include]]
+            },
+            license = "MIT",
+            cxxflags = "/utf-8"
+        },
+        ["xmake::sqlite3_3cd8e12478794a2ea0212dcfab9daf02_release_3.43.0+200_external"] = {
+            sysincludedirs = {
+                [[D:\xmake-global\.xmake\packages\s\sqlite3\3.43.0+200\3cd8e12478794a2ea0212dcfab9daf02\include]]
+            },
+            libfiles = {
+                [[D:\xmake-global\.xmake\packages\s\sqlite3\3.43.0+200\3cd8e12478794a2ea0212dcfab9daf02\lib\sqlite3.lib]]
+            },
+            version = "3.43.0+200",
+            links = {
+                "sqlite3"
+            },
+            linkdirs = {
+                [[D:\xmake-global\.xmake\packages\s\sqlite3\3.43.0+200\3cd8e12478794a2ea0212dcfab9daf02\lib]]
+            },
+            static = true,
+            license = "Public Domain"
+        },
+        ["xmake::glm_18615f0387cd4e2ab2e9ea9965afc784_release_1.0.1_external"] = {
+            sysincludedirs = {
+                [[D:\xmake-global\.xmake\packages\g\glm\1.0.1\18615f0387cd4e2ab2e9ea9965afc784\include]]
+            },
+            version = "1.0.1",
+            license = "MIT"
+        },
+        ["xmake::mariadb-connector-c_0fd14f15e6034771b621e24aeeb551f4_release_3.3.9_external"] = {
+            libfiles = {
+                [[D:\xmake-global\.xmake\packages\m\mariadb-connector-c\3.3.9\0fd14f15e6034771b621e24aeeb551f4\lib\mariadb\mariadbclient.lib]],
+                [[D:\xmake-global\.xmake\packages\m\mariadb-connector-c\3.3.9\0fd14f15e6034771b621e24aeeb551f4\lib\mariadb\libmariadb.lib]],
+                [[D:\xmake-global\.xmake\packages\m\mariadb-connector-c\3.3.9\0fd14f15e6034771b621e24aeeb551f4\lib\mariadb\libmariadb.dll]],
+                [[D:\xmake-global\.xmake\packages\m\mariadb-connector-c\3.3.9\0fd14f15e6034771b621e24aeeb551f4\lib\mariadb\plugin\caching_sha2_password.dll]],
+                [[D:\xmake-global\.xmake\packages\m\mariadb-connector-c\3.3.9\0fd14f15e6034771b621e24aeeb551f4\lib\mariadb\plugin\client_ed25519.dll]],
+                [[D:\xmake-global\.xmake\packages\m\mariadb-connector-c\3.3.9\0fd14f15e6034771b621e24aeeb551f4\lib\mariadb\plugin\dialog.dll]],
+                [[D:\xmake-global\.xmake\packages\m\mariadb-connector-c\3.3.9\0fd14f15e6034771b621e24aeeb551f4\lib\mariadb\plugin\mysql_clear_password.dll]],
+                [[D:\xmake-global\.xmake\packages\m\mariadb-connector-c\3.3.9\0fd14f15e6034771b621e24aeeb551f4\lib\mariadb\plugin\pvio_shmem.dll]],
+                [[D:\xmake-global\.xmake\packages\m\mariadb-connector-c\3.3.9\0fd14f15e6034771b621e24aeeb551f4\lib\mariadb\plugin\sha256_password.dll]]
+            },
+            version = "3.3.9",
+            links = {
+                "mariadbclient"
+            },
+            static = true,
+            license = "LGPL-2.1",
+            linkdirs = {
+                [[D:\xmake-global\.xmake\packages\m\mariadb-connector-c\3.3.9\0fd14f15e6034771b621e24aeeb551f4\lib\mariadb]]
+            },
+            shared = true,
+            sysincludedirs = {
+                [[D:\xmake-global\.xmake\packages\m\mariadb-connector-c\3.3.9\0fd14f15e6034771b621e24aeeb551f4\include]]
+            },
+            syslinks = {
+                "secur32",
+                "shlwapi"
+            }
+        },
+        ["xmake::lua_1a5ff96f7a834c1baa1ec743738c5e59_release_v5.4.7_external"] = {
+            sysincludedirs = {
+                [[D:\xmake-global\.xmake\packages\l\lua\v5.4.7\1a5ff96f7a834c1baa1ec743738c5e59\include\lua]]
+            },
+            libfiles = {
+                [[D:\xmake-global\.xmake\packages\l\lua\v5.4.7\1a5ff96f7a834c1baa1ec743738c5e59\lib\lua.lib]]
+            },
+            version = "v5.4.7",
+            links = {
+                "lua"
+            },
+            linkdirs = {
+                [[D:\xmake-global\.xmake\packages\l\lua\v5.4.7\1a5ff96f7a834c1baa1ec743738c5e59\lib]]
+            },
+            static = true
+        },
+        ["xmake::scriptx_03853a812f27457e9bf37b4dc1e2ae81_release_main_external"] = {
+            sysincludedirs = {
+                [[D:\xmake-global\.xmake\packages\s\scriptx\main\03853a812f27457e9bf37b4dc1e2ae81\include\src\include]]
+            },
+            libfiles = {
+                [[D:\xmake-global\.xmake\packages\s\scriptx\main\03853a812f27457e9bf37b4dc1e2ae81\lib\ScriptX.lib]]
+            },
+            version = "main",
+            links = {
+                "ScriptX"
+            },
+            linkdirs = {
+                [[D:\xmake-global\.xmake\packages\s\scriptx\main\03853a812f27457e9bf37b4dc1e2ae81\lib]]
+            },
+            static = true,
+            defines = {
+                "SCRIPTX_BACKEND=Lua",
+                "SCRIPTX_BACKEND_TRAIT_PREFIX=../backend/Lua/trait/Trait"
+            }
+        },
+        ["xmake::rapidjson_541d06a92bbb4f8fac523353c2426c15_release_v1.1.0_external"] = {
+            sysincludedirs = {
+                [[D:\xmake-global\.xmake\packages\r\rapidjson\v1.1.0\541d06a92bbb4f8fac523353c2426c15\include]]
+            },
+            version = "v1.1.0",
+            license = "MIT"
+        },
+        ["xmake::expected-lite_36ca3aab48a04473a0b2d34e01875b34_release_v0.8.0_external"] = {
+            sysincludedirs = {
+                [[D:\xmake-global\.xmake\packages\e\expected-lite\v0.8.0\36ca3aab48a04473a0b2d34e01875b34\include]]
+            },
+            version = "v0.8.0",
+            license = "BSL-1.0"
+        },
+        ["xmake::debug_assert_e3515434506a445792c1c83600bcf899_release_v1.3.4_external"] = {
+            sysincludedirs = {
+                [[D:\xmake-global\.xmake\packages\d\debug_assert\v1.3.4\e3515434506a445792c1c83600bcf899\include]]
+            },
+            version = "v1.3.4",
+            license = "zlib"
+        },
+        ["xmake::levilamina_8a2ce0d166104d6c8b7c173c9537d51c_release_1.0.1_external"] = {
+            shared = true,
+            libfiles = {
+                [[D:\xmake-global\.xmake\packages\l\levilamina\1.0.1\8a2ce0d166104d6c8b7c173c9537d51c\lib\LeviLamina.lib]],
+                [[D:\xmake-global\.xmake\packages\l\levilamina\1.0.1\8a2ce0d166104d6c8b7c173c9537d51c\bin\LeviLamina.dll]]
+            },
+            version = "1.0.1",
+            links = {
+                "LeviLamina"
+            },
+            linkdirs = {
+                [[D:\xmake-global\.xmake\packages\l\levilamina\1.0.1\8a2ce0d166104d6c8b7c173c9537d51c\lib]]
+            },
+            defines = {
+                "ENTT_PACKED_PAGE=128",
+                "ENTT_SPARSE_PAGE=2048",
+                "ENTT_NO_MIXIN"
+            },
+            static = true,
+            sysincludedirs = {
+                [[D:\xmake-global\.xmake\packages\l\levilamina\1.0.1\8a2ce0d166104d6c8b7c173c9537d51c\include]]
+            }
+        },
+        ["xmake::type_safe_4b33a9a5c8154bd58b7d4007150f50b7_release_v0.2.4_external"] = {
+            sysincludedirs = {
+                [[D:\xmake-global\.xmake\packages\t\type_safe\v0.2.4\4b33a9a5c8154bd58b7d4007150f50b7\include]]
+            },
+            version = "v0.2.4",
+            license = "MIT"
+        },
+        ["xmake::entt_3822e64c6ba14bb99ba35d14302954bf_release_v3.14.0_external"] = {
+            sysincludedirs = {
+                [[D:\xmake-global\.xmake\packages\e\entt\v3.14.0\3822e64c6ba14bb99ba35d14302954bf\include]]
+            },
+            version = "v3.14.0",
+            license = "MIT"
+        },
+        ["xmake::parallel-hashmap_47b4dd3f84f34e9d98b4cde1eedee54d_release_v1.3.12_external"] = {
+            sysincludedirs = {
+                [[D:\xmake-global\.xmake\packages\p\parallel-hashmap\v1.3.12\47b4dd3f84f34e9d98b4cde1eedee54d\include]]
+            },
+            version = "v1.3.12",
+            license = "Apache-2.0"
+        },
+        ["xmake::pcg_cpp_6c550fbfc1bb49fbbed872829f6090b0_release_v1.0.0_external"] = {
+            version = "v1.0.0",
+            sysincludedirs = {
+                [[D:\xmake-global\.xmake\packages\p\pcg_cpp\v1.0.0\6c550fbfc1bb49fbbed872829f6090b0\include]]
+            }
+        },
+        ["xmake::legacyparticleapi_7f4d38dba2f945c493fd248065a696c7_release_0.9.0-rc.1_external"] = {
+            sysincludedirs = {
+                [[D:\xmake-global\.xmake\packages\l\legacyparticleapi\0.9.0-rc.1\7f4d38dba2f945c493fd248065a696c7\include]]
+            },
+            libfiles = {
+                [[D:\xmake-global\.xmake\packages\l\legacyparticleapi\0.9.0-rc.1\7f4d38dba2f945c493fd248065a696c7\lib\LegacyParticleAPI.lib]]
+            },
+            version = "0.9.0-rc.1",
+            links = {
+                "LegacyParticleAPI"
+            },
+            linkdirs = {
+                [[D:\xmake-global\.xmake\packages\l\legacyparticleapi\0.9.0-rc.1\7f4d38dba2f945c493fd248065a696c7\lib]]
+            },
+            static = true
+        },
+        ["xmake::legacymoney_a15ed7a90ace443a9a0e39957705f0be_release_0.9.0-rc.1_external"] = {
+            sysincludedirs = {
+                [[D:\xmake-global\.xmake\packages\l\legacymoney\0.9.0-rc.1\a15ed7a90ace443a9a0e39957705f0be\include]]
+            },
+            libfiles = {
+                [[D:\xmake-global\.xmake\packages\l\legacymoney\0.9.0-rc.1\a15ed7a90ace443a9a0e39957705f0be\lib\LegacyMoney.lib]]
+            },
+            version = "0.9.0-rc.1",
+            links = {
+                "LegacyMoney"
+            },
+            linkdirs = {
+                [[D:\xmake-global\.xmake\packages\l\legacymoney\0.9.0-rc.1\a15ed7a90ace443a9a0e39957705f0be\lib]]
+            },
+            static = true
+        },
+        ["xmake::simpleini_1dedfb1b450946098d3856babab16426_release_v4.22_external"] = {
+            sysincludedirs = {
+                [[D:\xmake-global\.xmake\packages\s\simpleini\v4.22\1dedfb1b450946098d3856babab16426\include]]
+            },
+            defines = "SI_CONVERT_WIN32",
+            version = "v4.22",
+            license = "MIT"
+        },
+        ["xmake::lightwebsocketclient_5c2f35b7774c4c35a5d21e40fe028ace_release_v1.0.1_external"] = {
+            sysincludedirs = {
+                [[D:\xmake-global\.xmake\packages\l\lightwebsocketclient\v1.0.1\5c2f35b7774c4c35a5d21e40fe028ace\include]]
+            },
+            libfiles = {
+                [[D:\xmake-global\.xmake\packages\l\lightwebsocketclient\v1.0.1\5c2f35b7774c4c35a5d21e40fe028ace\lib\lightwebsocketclient.lib]]
+            },
+            version = "v1.0.1",
+            links = {
+                "lightwebsocketclient"
+            },
+            linkdirs = {
+                [[D:\xmake-global\.xmake\packages\l\lightwebsocketclient\v1.0.1\5c2f35b7774c4c35a5d21e40fe028ace\lib]]
+            },
+            static = true
+        },
+        ["xmake::openssl_290075b839ee412e80953472c36e007b_release_1.1.1-w_external"] = {
+            static = true,
+            libfiles = {
+                [[D:\xmake-global\.xmake\packages\o\openssl\1.1.1-w\290075b839ee412e80953472c36e007b\lib\libssl.lib]],
+                [[D:\xmake-global\.xmake\packages\o\openssl\1.1.1-w\290075b839ee412e80953472c36e007b\lib\libcrypto.lib]]
+            },
+            version = "1.1.1-w",
+            links = {
+                "libssl",
+                "libcrypto"
+            },
+            linkdirs = {
+                [[D:\xmake-global\.xmake\packages\o\openssl\1.1.1-w\290075b839ee412e80953472c36e007b\lib]]
+            },
+            license = "Apache-2.0",
+            sysincludedirs = {
+                [[D:\xmake-global\.xmake\packages\o\openssl\1.1.1-w\290075b839ee412e80953472c36e007b\include]]
+            },
+            syslinks = {
+                "ws2_32",
+                "user32",
+                "crypt32",
+                "advapi32"
+            }
+        },
+        ["xmake::symbolprovider_716edebcb0f14dbbbc97a0d6aa352593_release_v1.2.0_external"] = {
+            static = true,
+            libfiles = {
+                [[D:\xmake-global\.xmake\packages\s\symbolprovider\v1.2.0\716edebcb0f14dbbbc97a0d6aa352593\lib\SymbolProvider.lib]]
+            },
+            version = "v1.2.0",
+            links = {
+                "SymbolProvider"
+            },
+            linkdirs = {
+                [[D:\xmake-global\.xmake\packages\s\symbolprovider\v1.2.0\716edebcb0f14dbbbc97a0d6aa352593\lib]]
+            }
+        }
+    }
+}

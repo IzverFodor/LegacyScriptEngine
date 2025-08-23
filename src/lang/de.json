@@ -1,0 +1,58 @@
+{
+  "Failed to enable: {0}": "Fehler beim Aktivieren: {0}",
+  "Failed to load: {0}": "Fehler beim Laden: {0}",
+  "Cannot save default configurations to {0}": "Standardkonfigurationen können nicht in {0} gespeichert werden",
+  "Failed to read BaseLib at {0}": "Fehler beim Lesen von BaseLib auf {0}",
+  "Failed to register plugin manager": "Fehler beim Registrieren des Plugin-Managers",
+  "Failed to load plugin code": "Fehler beim Laden des Plugin-Codes",
+  "Failed to read plugin entry at {0}": "Fehler beim Lesen des Plugin-Eintrags auf {0}",
+  "Failed to load plugin {0}: {1}\\n{2}": "Fehler beim Laden des Plugins {0}: {1}\\n{2}",
+  "Failed to unload plugin {0}: {1}": "Entladen des Plugins {0}fehlgeschlagen: {1}",
+  "Migrating legacy plugin at {0}": "Altes Plugin auf {0} migrieren",
+  "Failed to migrate legacy plugin at {0}: {1} already exists": "Fehler beim Migrieren des älteren Plugins auf {0}: {1} existiert bereits",
+  "Failed to create directory {0}": "Verzeichnis {0} konnte nicht erstellt werden",
+  "Migrating legacy plugins": {
+    "": {
+      "": {
+        "": "Alte Plugins werden migriert..."
+      }
+    }
+  },
+  "Legacy plugins have been migrated, please restart the server to load them!": "Alte Plugins wurden migriert, bitte starte den Server neu, um sie zu laden!",
+  "Overworld": "Overworld",
+  "Nether": "Nederland",
+  "End": "Ende",
+  "Other dimension": "Sonstige Dimension",
+  "JSON parse error": "JSON-Parse-Fehler",
+  "Npm finished successfully": {
+    "": "Npm erfolgreich abgeschlossen."
+  },
+  "Executing \"npm install\" for plugin {name}": {
+    "": {
+      "": {
+        "": "Führe \"npm install\" für Plugin {name} aus ..."
+      }
+    }
+  },
+  "Error occurred": {
+    " Exit code: {code}": "Fehler aufgetreten. Exit-Code: {code}"
+  },
+  "Executing \"pip install\" for plugin {name}": {
+    "": {
+      "": {
+        "": "Führe \"pip install\" für Plugin {name} aus ..."
+      }
+    }
+  },
+  "Pip finished successfully": {
+    "": "Pip erfolgreich abgeschlossen."
+  },
+  "Runtime command {} already exists, changes will not beapplied except for setOverload!": "Laufzeitbefehl {} existiert bereits, Änderungen werden außer setOverload nicht angewendet!",
+  "Failed to initialize file mapping": "Fehler beim Initialisieren der Dateizuordnung",
+  "Failed to initialize map file": "Fehler beim Initialisieren der Kartendatei",
+  "Command {} failed to execute, is the plugin unloaded?": "Befehl {} konnte nicht ausgeführt werden, wird das Plugin entladen?",
+  "Could not find {} in registered commands": {
+    "": "Konnte {} in registrierten Befehlen nicht finden."
+  },
+  "Event {} not found!": "Event {} nicht gefunden!"
+}

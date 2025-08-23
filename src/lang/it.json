@@ -1,0 +1,58 @@
+{
+  "Failed to enable: {0}": "Attivazione non riuscita: {0}",
+  "Failed to load: {0}": "Caricamento non riuscito: {0}",
+  "Cannot save default configurations to {0}": "Impossibile salvare le configurazioni predefinite in {0}",
+  "Failed to read BaseLib at {0}": "Lettura di BaseLib su {0} non riuscita",
+  "Failed to register plugin manager": "Registrazione del gestore plugin non riuscita",
+  "Failed to load plugin code": "Impossibile caricare il codice del plugin",
+  "Failed to read plugin entry at {0}": "Lettura della voce del plugin in {0} non riuscita",
+  "Failed to load plugin {0}: {1}\\n{2}": "Caricamento del plugin {0}non riuscito: {1}\\n{2}",
+  "Failed to unload plugin {0}: {1}": "Scaricamento del plugin {0}non riuscito: {1}",
+  "Migrating legacy plugin at {0}": "Migrazione plugin legacy in {0}",
+  "Failed to migrate legacy plugin at {0}: {1} already exists": "Migrazione del plugin legacy in {0}non riuscita: {1} esiste già",
+  "Failed to create directory {0}": "Creazione della directory {0} non riuscita",
+  "Migrating legacy plugins": {
+    "": {
+      "": {
+        "": "Migrazione plugin legacy..."
+      }
+    }
+  },
+  "Legacy plugins have been migrated, please restart the server to load them!": "I plugin legacy sono stati migrati, si prega di riavviare il server per caricarli!",
+  "Overworld": "Overworld",
+  "Nether": "Nether",
+  "End": "Fine",
+  "Other dimension": "Dimensione sconosciuta",
+  "JSON parse error": "Errore di analisi JSON",
+  "Npm finished successfully": {
+    "": "Esecuzione di \"npm install\" completata con successo."
+  },
+  "Executing \"npm install\" for plugin {name}": {
+    "": {
+      "": {
+        "": "Esecuzione di \"npm install\" per il plugin {name}..."
+      }
+    }
+  },
+  "Error occurred": {
+    " Exit code: {code}": "Si è verificato un errore. Codice di uscita: {code}"
+  },
+  "Executing \"pip install\" for plugin {name}": {
+    "": {
+      "": {
+        "": "Esecuzione di \"pip install\" per il plugin {name}..."
+      }
+    }
+  },
+  "Pip finished successfully": {
+    "": "Pip finito con successo."
+  },
+  "Runtime command {} already exists, changes will not beapplied except for setOverload!": "Il comando Runtime {} esiste già, le modifiche non saranno applicate tranne per setOverload!",
+  "Failed to initialize file mapping": "Impossibile inizializzare la mappatura dei file",
+  "Failed to initialize map file": "Impossibile inizializzare il file mappa",
+  "Command {} failed to execute, is the plugin unloaded?": "L'esecuzione del comando {} non è riuscita, il plugin è stato scaricato?",
+  "Could not find {} in registered commands": {
+    "": "Impossibile trovare {} nei comandi registrati."
+  },
+  "Event {} not found!": "Evento {} non trovato!"
+}

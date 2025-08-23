@@ -1,0 +1,58 @@
+{
+  "Failed to enable: {0}": "Falha ao ativar: {0}",
+  "Failed to load: {0}": "Falha ao carregar: {0}",
+  "Cannot save default configurations to {0}": "Não é possível salvar as configurações padrão para {0}",
+  "Failed to read BaseLib at {0}": "Falha ao ler BaseLib em {0}",
+  "Failed to register plugin manager": "Falha ao registrar o gerenciador de plugins",
+  "Failed to load plugin code": "Falha ao carregar o código do plugin",
+  "Failed to read plugin entry at {0}": "Falha ao ler entrada do plugin em {0}",
+  "Failed to load plugin {0}: {1}\\n{2}": "Falha ao carregar plugin {0}: {1}\\n{2}",
+  "Failed to unload plugin {0}: {1}": "Falha ao descarregar plugin {0}: {1}",
+  "Migrating legacy plugin at {0}": "Migrando plugin legado em {0}",
+  "Failed to migrate legacy plugin at {0}: {1} already exists": "Falha ao migrar o plugin legado para {0}: {1} já existe",
+  "Failed to create directory {0}": "Falha ao criar diretório {0}",
+  "Migrating legacy plugins": {
+    "": {
+      "": {
+        "": "Migrando plugins legados..."
+      }
+    }
+  },
+  "Legacy plugins have been migrated, please restart the server to load them!": "Plugins Legacy foram migrados, por favor reinicie o servidor para carregá-los!",
+  "Overworld": "Extrema",
+  "Nether": "Nether",
+  "End": "Término",
+  "Other dimension": "Outra dimensão",
+  "JSON parse error": "Erro de análise JSON",
+  "Npm finished successfully": {
+    "": "Npm concluído com sucesso."
+  },
+  "Executing \"npm install\" for plugin {name}": {
+    "": {
+      "": {
+        "": "Executando \"npm install\" para o plugin {name}..."
+      }
+    }
+  },
+  "Error occurred": {
+    " Exit code: {code}": "Ocorreu um erro. Sair do código: {code}"
+  },
+  "Executing \"pip install\" for plugin {name}": {
+    "": {
+      "": {
+        "": "Executando \"pip install\" para o plugin {name}..."
+      }
+    }
+  },
+  "Pip finished successfully": {
+    "": "Pip concluído com sucesso."
+  },
+  "Runtime command {} already exists, changes will not beapplied except for setOverload!": "Comando de execução {} já existe, as alterações não serão aplicadas exceto para setOverload!",
+  "Failed to initialize file mapping": "Falha ao inicializar o mapeamento de arquivos",
+  "Failed to initialize map file": "Falha ao inicializar arquivo de mapa",
+  "Command {} failed to execute, is the plugin unloaded?": "Comando {} falha ao executar, o plugin está descarregado?",
+  "Could not find {} in registered commands": {
+    "": "Não foi possível encontrar {} nos comandos registrados."
+  },
+  "Event {} not found!": "Evento {} não encontrado!"
+}

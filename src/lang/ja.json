@@ -1,0 +1,58 @@
+{
+  "Failed to enable: {0}": "有効化に失敗しました: {0}",
+  "Failed to load: {0}": "読み込みに失敗しました： {0}",
+  "Cannot save default configurations to {0}": "デフォルト設定を {0}に保存できません",
+  "Failed to read BaseLib at {0}": "{0} の BaseLib の読み込みに失敗しました",
+  "Failed to register plugin manager": "プラグインマネージャーの登録に失敗しました",
+  "Failed to load plugin code": "プラグインコードの読み込みに失敗しました",
+  "Failed to read plugin entry at {0}": "{0} のプラグインエントリの読み取りに失敗しました",
+  "Failed to load plugin {0}: {1}\\n{2}": "プラグイン {0}の読み込みに失敗しました: {1}\\n{2}",
+  "Failed to unload plugin {0}: {1}": "プラグイン {0}のアンロードに失敗しました: {1}",
+  "Migrating legacy plugin at {0}": "{0}でレガシープラグインを移行中",
+  "Failed to migrate legacy plugin at {0}: {1} already exists": "{0}でレガシープラグインを移行できませんでした: {1} は既に存在します",
+  "Failed to create directory {0}": "{0}ディレクトリの作成に失敗しました",
+  "Migrating legacy plugins": {
+    "": {
+      "": {
+        "": "レガシープラグインを移行中..."
+      }
+    }
+  },
+  "Legacy plugins have been migrated, please restart the server to load them!": "以前のプラグインは移行されました。サーバーを再起動してロードしてください！",
+  "Overworld": "オーバーワールド",
+  "Nether": "ネザー",
+  "End": "エンド",
+  "Other dimension": "その他のサイズ",
+  "JSON parse error": "JSONの構文エラー",
+  "Npm finished successfully": {
+    "": "Npmは正常に終了しました。"
+  },
+  "Executing \"npm install\" for plugin {name}": {
+    "": {
+      "": {
+        "": "プラグイン {name} の \"npm install\" を実行しています..."
+      }
+    }
+  },
+  "Error occurred": {
+    " Exit code: {code}": "エラーが発生しました。終了コード： {code}"
+  },
+  "Executing \"pip install\" for plugin {name}": {
+    "": {
+      "": {
+        "": "プラグイン {name} の \"pip install\" を実行中 ..."
+      }
+    }
+  },
+  "Pip finished successfully": {
+    "": "ピップは正常に終了しました。"
+  },
+  "Runtime command {} already exists, changes will not beapplied except for setOverload!": "ランタイムコマンド {} が既に存在します。変更は setOverload 以外は適用されません。",
+  "Failed to initialize file mapping": "ファイルマッピングの初期化に失敗しました",
+  "Failed to initialize map file": "マップファイルの初期化に失敗しました",
+  "Command {} failed to execute, is the plugin unloaded?": "コマンド {} の実行に失敗しました。プラグインがアンロードされていますか？",
+  "Could not find {} in registered commands": {
+    "": "登録されたコマンドで {} が見つかりませんでした。"
+  },
+  "Event {} not found!": "イベント {} が見つかりません！"
+}

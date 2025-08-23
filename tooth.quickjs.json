@@ -1,0 +1,30 @@
+{
+  "format_version": 2,
+  "tooth": "gitea.litebds.com/LiteLDev/legacy-script-engine-quickjs",
+  "version": "0.9.7",
+  "info": {
+    "name": "LegacyScriptEngine with QuickJs backend",
+    "description": "A plugin engine for running LLSE plugins on LeviLamina",
+    "author": "LiteLDev",
+    "tags": [
+      "platform:levilamina",
+      "plugin-engine"
+    ]
+  },
+  "dependencies": {
+    "github.com/LiteLDev/LegacyRemoteCall": "0.9.x",
+    "github.com/LiteLDev/LegacyParticleAPI": "0.9.x",
+    "github.com/LiteLDev/LegacyMoney": "0.9.x"
+  },
+  "prerequisites": {
+    "github.com/LiteLDev/LeviLamina": "1.0.x"
+  },
+  "files": {
+    "place": [
+      {
+        "src": "legacy-script-engine-quickjs/*",
+        "dest": "plugins/legacy-script-engine-quickjs/"
+      }
+    ]
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "Failed to enable: {0}": "{0} 啟用失敗",
+  "Failed to load: {0}": "{0} 加載失敗",
+  "Cannot save default configurations to {0}": "無法將預設配置儲存到 {0}",
+  "Failed to read BaseLib at {0}": "無法讀取位於 {0} 的 BaseLib",
+  "Failed to register plugin manager": "插件管理器註冊失敗",
+  "Failed to load plugin code": "載入插件程式碼失敗",
+  "Failed to read plugin entry at {0}": "無法讀取 {0} 處的插件條目",
+  "Failed to load plugin {0}: {1}\\n{2}": "無法載入插件 {0}：{1}\\n{2}",
+  "Failed to unload plugin {0}: {1}": "無法卸載插件 {0}：{1}",
+  "Migrating legacy plugin at {0}": "正在遷移位於 {0} 的舊插件",
+  "Failed to migrate legacy plugin at {0}: {1} already exists": "無法遷移 {0} 處的舊插件: {1} 已存在",
+  "Failed to create directory {0}": "未能建立目錄 {0}",
+  "Migrating legacy plugins": {
+    "": {
+      "": {
+        "": "正在遷移舊插件..."
+      }
+    }
+  },
+  "Legacy plugins have been migrated, please restart the server to load them!": "舊插件已遷移，請重新啟動伺服器以載入它們！",
+  "Overworld": "主世界",
+  "Nether": "地獄",
+  "End": "終界",
+  "Other dimension": "其他維度",
+  "JSON parse error": "JSON解析錯誤",
+  "Npm finished successfully": {
+    "": "Npm 命令已成功完成"
+  },
+  "Executing \"npm install\" for plugin {name}": {
+    "": {
+      "": {
+        "": "正在為 {name} 插件執行 “npm install”..."
+      }
+    }
+  },
+  "Error occurred": {
+    " Exit code: {code}": "發生錯誤. 退出代碼: {code}"
+  },
+  "Executing \"pip install\" for plugin {name}": {
+    "": {
+      "": {
+        "": "正在為 {name} 插件執行 “pip install”..."
+      }
+    }
+  },
+  "Pip finished successfully": {
+    "": "Pip 命令已成功完成"
+  },
+  "Runtime command {} already exists, changes will not beapplied except for setOverload!": "Runtime command {} already exists, changes will not beapplied except for setOverload!",
+  "Failed to initialize file mapping": "Failed to initialize file mapping",
+  "Failed to initialize map file": "Failed to initialize map file",
+  "Command {} failed to execute, is the plugin unloaded?": "Command {} failed to execute, is the plugin unloaded?",
+  "Could not find {} in registered commands": {
+    "": "Could not find {} in registered commands."
+  },
+  "Event {} not found!": "Event {} not found!"
+}
