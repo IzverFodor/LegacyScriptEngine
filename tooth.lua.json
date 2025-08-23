@@ -1,6 +1,6 @@
 {
   "format_version": 2,
-  "tooth": "gitea.litebds.com/LiteLDev/legacy-script-engine-lua",
+  "tooth": "github.com/IzverFodor/legacy-script-engine-lua",
   "version": "0.9.7",
   "info": {
     "name": "LegacyScriptEngine with Lua backend",
