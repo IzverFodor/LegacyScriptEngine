@@ -1,6 +1,6 @@
 {
   "format_version": 2,
-  "tooth": "github.com/IzverFodor/legacy-script-engine-quickjs",
+  "tooth": "github.com/IzverFodor/LegacyScriptEngine/releases/download/v0.9.8/legacy-script-engine-quickjs.zip",
   "version": "0.9.7",
   "info": {
     "name": "LegacyScriptEngine with QuickJs backend",
