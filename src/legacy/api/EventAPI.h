@@ -97,7 +97,6 @@ enum class EVENT_TYPES : int {
     onScoreChanged,
     onTick,
     onServerStarted,
-    onServerShutdown,
     onConsoleCmd,
     /* Economic Events */
     onMoneyAdd,

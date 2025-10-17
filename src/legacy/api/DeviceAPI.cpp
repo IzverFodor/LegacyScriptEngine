@@ -11,6 +11,14 @@
 #include "mc/network/ServerNetworkHandler.h"
 #include "mc/world/actor/player/Player.h"
 #include "mc/world/level/Level.h"
+#include "mc/world/actor/player/SerializedSkin.h"
+#include "cpp-base64/base64.h"
+#include "mc/deps/core/image/Image.h"
+#include "mc/deps/core/container/Blob.h"
+#define STB_IMAGE_WRITE_IMPLEMENTATION
+#include "stb_image_write.h"
+// #include <filesystem>
+
 
 #include <string>
 
@@ -29,6 +37,9 @@ ClassDefine<DeviceClass> DeviceClassBuilder = defineClass<DeviceClass>("LLSE_Dev
                                                   //   .instanceProperty("playMode", &DeviceClass::getPlayMode)
                                                   .instanceProperty("serverAddress", &DeviceClass::getServerAddress)
                                                   .instanceProperty("clientId", &DeviceClass::getClientId)
+                                                  .instanceProperty("skin", [](DeviceClass* self) {
+                                                      return self->getSkin();
+                                                  })
                                                   .build();
 
 //////////////////// Classes ////////////////////
@@ -58,6 +69,45 @@ Player* DeviceClass::getPlayer() {
         return nullptr;
     }
 }
+
+Local<Value> DeviceClass::getSkin() {
+    Player* player = getPlayer();
+    if (!player) return Local<Value>();
+
+    const SerializedSkin& skin = player->getSkin();
+    const mce::Image& img = skin.mSkinImage;
+
+    const mce::Blob& blob = img.mImageBytes.get();
+    const unsigned char* pixels = blob.cbegin();
+    int width  = static_cast<int>(img.mWidth);
+    int height = static_cast<int>(img.mHeight);
+    int channels = 4; // RGBA
+
+    // std::filesystem::path path = "skins";
+    // std::filesystem::create_directories(path);
+    // std::string filename = (path / (player->getName() + "_skin.png")).string();
+    // int resFile = stbi_write_png(filename.c_str(), width, height, channels, pixels, width * channels);
+    // if (resFile == 0) {
+    //     return String::newString("Failed to save PNG");
+    // }
+
+
+    std::vector<unsigned char> pngBuffer;
+    auto write_callback = [](void* context, void* data, int size) {
+        auto* buffer = reinterpret_cast<std::vector<unsigned char>*>(context);
+        buffer->insert(buffer->end(), (unsigned char*)data, (unsigned char*)data + size);
+    };
+
+    int resMem = stbi_write_png_to_func(write_callback, &pngBuffer, width, height, channels, pixels, width * channels);
+    if (resMem == 0) {
+        return String::newString("Failed to encode PNG to memory");
+    }
+
+    std::string base64Skin = base64_encode(pngBuffer.data(), pngBuffer.size());
+
+    return String::newString(base64Skin);
+}
+
 
 Local<Value> DeviceClass::getIP() {
     try {

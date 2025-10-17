@@ -36,7 +36,6 @@
 #include "ll/api/event/player/PlayerSwingEvent.h"
 #include "ll/api/event/player/PlayerUseItemEvent.h"
 #include "ll/api/event/server/ServerStartedEvent.h"
-#include "ll/api/event/server/ServerStoppingEvent.h"
 #include "ll/api/event/world/BlockChangedEvent.h"
 #include "ll/api/event/world/FireSpreadEvent.h"
 #include "ll/api/event/world/SpawnMobEvent.h"
@@ -135,21 +134,17 @@ bool LLSECallEventsOnHotLoad(ScriptEngine* engine) {
     return true;
 }
 
-
 bool LLSECallEventsOnHotUnload(ScriptEngine* engine) {
     ll::service::getLevel()->forEachPlayer([&](Player& pl) -> bool {
         FakeCallEvent(engine, EVENT_TYPES::onLeft, PlayerClass::newPlayer(&pl));
         return true;
     });
-    FakeCallEvent(engine, EVENT_TYPES::onServerShutdown);
     for (auto& [index, cb] : getEngineData(engine)->unloadCallbacks) {
         cb(engine);
     }
     getEngineData(engine)->unloadCallbacks.clear();
-
     return true;
 }
-
 
 //////////////////// Events ////////////////////
 
@@ -870,15 +865,6 @@ void InitBasicEventListeners() {
             ProcessRegCmdQueue();
         }).launch(ll::thread::ServerThreadExecutor::getDefault());
     });
-
-    // ===== onServerShutdown =====
-    bus.emplaceListener<ll::event::ServerStoppingEvent>([](ll::event::ServerStoppingEvent& ev) {
-        IF_LISTENED(EVENT_TYPES::onServerShutdown) {
-            CallEvent(EVENT_TYPES::onServerShutdown); // Not cancellable
-        }
-        IF_LISTENED_END(EVENT_TYPES::onServerShutdown);
-    });
-
 
     // 植入tick
     ll::coro::keepThis([]() -> ll::coro::CoroTask<> {

@@ -21,6 +21,7 @@ public:
     static Local<Object> newDevice(Player* player);
 
     Local<Value> getIP();
+    Local<Value> getSkin();
     Local<Value> getAvgPing();
     Local<Value> getAvgPacketLoss();
     Local<Value> getLastPing();
