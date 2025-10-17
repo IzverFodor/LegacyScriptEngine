@@ -451,60 +451,45 @@ void ADD_CALLBACK(
     std::string const&                              path,
     Local<Function> const&                          func
 ) {
-    callbacks.emplace(
-        make_pair(path, HttpServerCallback{EngineScope::currentEngine(), script::Global<Function>{func}, method, path})
-    );
-    auto receiveMethod =
-        [engine = EngineScope::currentEngine(), method, callbacks](const Request& req, Response& resp) {
-            if ((ll::getGamingStatus() == ll::GamingStatus::Stopping) || !EngineManager::isValid(engine)
-                || engine->isDestroying())
-                return;
-            ll::coro::keepThis([engine, req, &resp, method, callbacks]() -> ll::coro::CoroTask<> {
-                if ((ll::getGamingStatus() == ll::GamingStatus::Stopping) || !EngineManager::isValid(engine)
-                    || engine->isDestroying())
-                    co_return;
+    auto engine = EngineScope::currentEngine();
+        callbacks.emplace(path, HttpServerCallback{engine, script::Global<Function>{func}, method, path});
+        auto receiveMethod = [engine, method, callbacks](const Request& req, Response& resp) {
+        if ((ll::getGamingStatus() == ll::GamingStatus::Stopping) ||
+            !EngineManager::isValid(engine) || engine->isDestroying())
+            return;
 
-                EngineScope enter(engine);
-                try {
-                    for (auto& [k, v] : callbacks) {
-                        if (v.type != method) continue;
-                        std::regex  rgx(k);
-                        std::smatch matches;
-                        if (std::regex_match(req.path, matches, rgx)) {
-                            if (matches == req.matches) {
-                                auto reqObj  = new HttpRequestClass(req);
-                                auto respObj = new HttpResponseClass(resp);
-                                v.func.get().call({}, reqObj, respObj);
-                                resp = *respObj->get();
-                                break;
-                            }
-                        }
+        EngineScope enter(engine);
+
+        try {
+            for (auto& [k, v] : callbacks) {
+                if (v.type != method) continue;
+                std::regex  rgx(k);
+                std::smatch matches;
+                if (std::regex_match(req.path, matches, rgx)) {
+                    if (matches == req.matches) {
+                        auto reqObj  = new HttpRequestClass(req);
+                        auto respObj = new HttpResponseClass(resp);
+                        v.func.get().call({}, reqObj, respObj);
+                        resp = *respObj->get();
+                        return;
                     }
                 }
-                CATCH_CALLBACK_IN_CORO("Fail in NetworkAPI callback")
-            }).syncLaunch(ll::thread::ThreadPoolExecutor::getDefault());
-        };
+            }
+        }
+        catch (const std::exception& e) {
+            resp.status = 500;
+            resp.set_content(std::string("Internal error: ") + e.what(), "text/plain");
+        }
+    };
+
     switch (method) {
-    case HttpRequestType::Get:
-        svr->Get(path.c_str(), receiveMethod);
-        break;
-    case HttpRequestType::Post:
-        svr->Post(path.c_str(), receiveMethod);
-        break;
-    case HttpRequestType::Put:
-        svr->Put(path.c_str(), receiveMethod);
-        break;
-    case HttpRequestType::Delete:
-        svr->Delete(path.c_str(), receiveMethod);
-        break;
-    case HttpRequestType::Options:
-        svr->Options(path.c_str(), receiveMethod);
-        break;
-    case HttpRequestType::Patch:
-        svr->Patch(path.c_str(), receiveMethod);
-        break;
-    default:
-        break;
+        case HttpRequestType::Get:     svr->Get(path.c_str(), receiveMethod); break;
+        case HttpRequestType::Post:    svr->Post(path.c_str(), receiveMethod); break;
+        case HttpRequestType::Put:     svr->Put(path.c_str(), receiveMethod); break;
+        case HttpRequestType::Delete:  svr->Delete(path.c_str(), receiveMethod); break;
+        case HttpRequestType::Options: svr->Options(path.c_str(), receiveMethod); break;
+        case HttpRequestType::Patch:   svr->Patch(path.c_str(), receiveMethod); break;
+        default: break;
     }
 }
 
