@@ -88,11 +88,13 @@ target("legacy-script-engine")
     set_languages("cxx20")
     set_symbols("debug")
     add_files(
-        "src/**.cpp"
+        "src/**.cpp",
+        "include/cpp-base64/base64.cpp"
     )
     add_includedirs(
         "src",
-        "src/legacy"
+        "src/legacy",
+        "include"
     )
     on_load(function (target)
         local tag = os.iorun("git describe --tags --abbrev=0 --always")
