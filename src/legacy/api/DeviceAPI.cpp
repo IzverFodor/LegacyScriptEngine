@@ -40,6 +40,9 @@ ClassDefine<DeviceClass> DeviceClassBuilder = defineClass<DeviceClass>("LLSE_Dev
                                                   .instanceProperty("skin", [](DeviceClass* self) {
                                                       return self->getSkin();
                                                   })
+                                                  .instanceProperty("skinSize", [](DeviceClass* self) {
+                                                      return self->getSkinSize();
+                                                  })
                                                   .build();
 
 //////////////////// Classes ////////////////////
@@ -68,6 +71,23 @@ Player* DeviceClass::getPlayer() {
     } else {
         return nullptr;
     }
+}
+
+Local<Value> DeviceClass::getSkinSize() {
+    Player* player = getPlayer();
+    if (!player) return Local<Value>();
+
+    const SerializedSkin& skin = player->getSkin();
+    const mce::Image& img = skin.mSkinImage;
+
+    int width  = static_cast<int>(img.mWidth);
+    int height = static_cast<int>(img.mHeight);
+
+    Local<Object> result = Object::newObject(); 
+    result.set("width", Number::newNumber(width));
+    result.set("height", Number::newNumber(height));
+
+    return result;
 }
 
 Local<Value> DeviceClass::getSkin() {
