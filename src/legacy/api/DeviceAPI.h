@@ -22,6 +22,7 @@ public:
 
     Local<Value> getIP();
     Local<Value> getSkin();
+    Local<Value> getSkinSize();
     Local<Value> getAvgPing();
     Local<Value> getAvgPacketLoss();
     Local<Value> getLastPing();
