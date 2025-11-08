@@ -43,6 +43,9 @@ ClassDefine<DeviceClass> DeviceClassBuilder = defineClass<DeviceClass>("LLSE_Dev
                                                   .instanceProperty("skinSize", [](DeviceClass* self) {
                                                       return self->getSkinSize();
                                                   })
+                                                  .instanceProperty("info", [](DeviceClass* self) {
+                                                      return self->getDeviceInfo();
+                                                  })
                                                   .build();
 
 //////////////////// Classes ////////////////////
@@ -73,6 +76,43 @@ Player* DeviceClass::getPlayer() {
     }
 }
 
+Local<Value> DeviceClass::getDeviceInfo() {
+    Player* player = getPlayer();
+    if (!player) return Local<Value>();
+
+    Json::Value& data = player->getConnectionRequest()->mRawToken->mDataInfo;
+
+    std::function<Local<Value>(const Json::Value&)> toLocal;
+    toLocal = [&](const Json::Value& val) -> Local<Value> {
+        if (val.isObject()) {
+            Local<Object> obj = Object::newObject();
+            std::vector<std::string> keys = val.getMemberNames();
+            for (const std::string& key : keys) {
+                obj.set(key, toLocal(val[key]));
+            }
+            return obj;
+        } else if (val.isArray()) {
+            Local<Array> arr = Array::newArray();
+            for (unsigned int i = 0; i < val.size(); ++i) {
+                arr.set(i, toLocal(val[i]));
+            }
+            return arr;
+        } else if (val.isString()) {
+            return String::newString(val.asString(""));
+        } else if (val.isInt() || val.isUInt()) {
+            return Number::newNumber(val.asInt(0));
+        } else if (val.isDouble()) {
+            return Number::newNumber(val.asDouble(0.0));
+        } else if (val.isBool()) {
+            return Boolean::newBoolean(val.asBool(false));
+        } else {
+            return Local<Value>();
+        }
+    };
+
+    return toLocal(data);
+}
+
 Local<Value> DeviceClass::getSkinSize() {
     Player* player = getPlayer();
     if (!player) return Local<Value>();
@@ -84,8 +124,8 @@ Local<Value> DeviceClass::getSkinSize() {
     int height = static_cast<int>(img.mHeight);
 
     Local<Object> result = Object::newObject(); 
-    result.set("width", Number::newNumber(width));
-    result.set("height", Number::newNumber(height));
+    result.set("w", Number::newNumber(width));
+    result.set("h", Number::newNumber(height));
 
     return result;
 }
