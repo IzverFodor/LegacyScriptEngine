@@ -32,5 +32,6 @@ public:
     // Local<Value> getPlayMode();
     Local<Value> getServerAddress();
     Local<Value> getClientId();
+    Local<Value> getDeviceInfo();
 };
 extern ClassDefine<DeviceClass> DeviceClassBuilder;
